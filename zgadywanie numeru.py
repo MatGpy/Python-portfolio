@@ -1,10 +1,13 @@
+# Program bedacy gra polegajaca na odgadnieciu wygenerowanego losowo numeru z przedzialu od 1 do 10 w okreslonej liczbie prob
 import random
 print("Try to guess a number between 1 and 10")
+# program generuje losowo trzy numery - zgadywany numer i dwa inne numery uzywane do generowania wskazowek dla gracza
 num = random.randint(1,10)
 num2 = random.randint(1,3)
 num3 = random.randint(1,10)
+# program tworzy zmienna przeznaczona do przechowywania ilosci prob dostepnych dla gracza
 level = 0
-#print(num)
+# program pyta uzytkownika o poziom trudnosci, z ktorym chce on grac i daje mu konkretna ilosc prob w zaleznosci od wybranego poziomu trudnosci. Jesli uzytkownik poda poziom trudnosci inny niz podane do wyboru, program zwraca blad
 print("levels of difficulty:\nvery easy - 8 attempts\neasy - 6 attempts\nnormal - 4 attempts\nhard - 2 attempts")
 level2 = str(input("Choose level of difficulty: "))
 if level2 == "very easy":
@@ -17,7 +20,7 @@ if level2 == "hard":
     level = 2
 if level2 != "very easy" and level2 != "easy" and level2 != "normal" and level2 != "hard":
     raise TypeError
-
+# program pyta sie uzytkownika o to, czy chce on dostac wskazowke i daje mu ja, jesli uzytkownik tego chce
 hint = str(input("Do you want a hint? "))
 if hint == "yes":
     if num2 == 1:
@@ -37,7 +40,7 @@ if hint == "yes":
             print("power of this number is higher or equal to 10")
 if hint != "yes" and hint != "no":
     raise TypeError
-
+# program tworzy funkcje sprawdzajaca, czy numer podany przez uzytkownika w danej probie jest prawidlowy, za wysoki, lub za niski
 def guess(x, y):
     if x == y:
         return "Correct answer"
@@ -46,6 +49,7 @@ def guess(x, y):
             return "Your guess is too low"
         if x > y:
             return "Your guess is too high"
+#program tworzy funkcje iterujaca przez wszystkie dostepne dla uzytkownika proby, pokazuje poprawnosc wykonanych przez uzytkownika prob i wyswietla prawidlowy numer jesli uzytkownik go nie zgadl
 i = 1
 while i <= level:
     x = int(input("Attempt number {}: ".format(i)))
