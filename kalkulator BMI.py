@@ -1,22 +1,20 @@
-'''
-BMI calculator:
-type your weight (in kilograms) and height (in centimetres)
-'''
+#Kalkulator BMI (Body Mass Index)
 w = float(input("type your weight in kilograms: ")) 
 h = float(input("type your height in centimetres: "))
-# program does calculations necessary to calculate BMI
+# program pobiera od uzytkownika mase ciala (w kilogramach) i wzrost (w centymetrach)
 x = h / 100 
-y = x * x
+y = x*x
 bmi = w/y
-# program outputs your BMI and rates how healthy/unhealthy is your BMI
+# program wylicza BMI na podstawie dostarczonych danych
 print("Your BMI is: {}".format(bmi))
 if bmi <= 18:
-  print("you weight too little")
+  print("your weight is too low")
 if bmi > 18 and bmi <= 24:
   print("your weight is perfect")
 if bmi > 24 and bmi <= 29:
-  print("you weight a bit too much")
+  print("your weight is a bit too high")
 if bmi > 29 and bmi <= 35:
-  print("you weight too much")
+  print("your weight is too high")
 if bmi > 35:
-  print("you weight way too much")
+  print("your weight is way too high")
+# program wypisuje BMI uzytkownika i informacje o tym jak (nie)prawidlowa jest jego waga
