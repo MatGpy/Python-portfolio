@@ -86,58 +86,59 @@ przepisy = {
     "szarlotka": "Jablka obrac, pokroic na cwiartki i wyciac gniazda nasienne. Pokroic na mniejsze kawalki i wlozyc do szerokiego garnka lub na gleboka patelnie. Dodac cukier i cynamon i smazyc przez ok. 20 minut co chwile mieszajac, az jablka zmiekna i zaczna sie rozpadac. Do maki dodac pokrojone w kostke zimne maslo, proszek do pieczenia, cukier i cukier wanilinowy. Skladniki polaczyc w jednolite ciasto (mikserem lub recznie), pod koniec dodac jajko (ciasto bedzie dosc miekkie). Podzielic je na pol i wlozyc obie polowki do zamrazarki na ok. 15 minut. Piekarnik nagrzac do 180 st C. Przygotowac nieduza forme. Wyjac jedna polowke ciasta z zamrazarki, pokroic nozem na plasterki i wylepic nimi spod formy. Nastepnie wylozyc na to jablka. Pozostale ciasto zetrzec na tarce bezposrednio na jablka (lub pokroic ciasto na plasterki i ulozyc na wierzchu). Wstawic do piekarnika i piec przez ok. 50 minut lub na zloty kolor. Upieczona szarlotke przestudzic i posypac cukrem pudrem.",
     "brownie": "Piekarnik nagrzac do 160 stopni C. Przygotowac mala prostokatna foremke o wymiarach ok. 21 cm x 28 cm (lub o podobnej powierzchni). Posmarowac ja maslem i wylozyc papierem do pieczenia. Maslo pokroic w kostke i wlozyc do rondelka, dodac polamana na kosteczki czekolade i caly czas mieszajac roztopic na malym ogniu, odstawic z palnika. W oddzielnej misce rozmiksowac lub wymieszac rozga jajka z cukrem. Dodac do nich roztopiona czekolade z maslem zmiksowac lub wymieszac rozga na gladka mase. Dodac make oraz sol i zmiksowac na jednolite ciasto. Wylozyc do przygotowanej blaszki, wyrownac powierzchnie. Dodatkowa czekolade pokroic na kawalki i posypac po wierzchu ciasta. Wstawic do piekarnika i piec przez ok. 30 minut az ciasto lekko urosnie. Jesli uzywamy wiekszej blaszki, ciasto bedzie gotowe szybciej, jesli mniejszej - czas pieczenia nalezy wydluzyc. Po upieczeniu i ostudzeniu pokroic na male kawaleczki.",
 }
-# program wyswietla dostepne kategorie potraw i po
+# program wyswietla dostepne kategorie potraw i pobiera od uzytkownika wybrana kategorie
 print("dostepne kategorie potraw: \nzupa\ndanie glowne miesne\ndanie glowne bezmiesne\ndeser\n")
 category = str(input("wpisz kategorie potrawy: "))
+# program wyswietla dostepne potrawy na podstawie wybranej poprzednio kategorii i pobiera od uzytkownika wybrana nazwe potrawy, po czym wyswietla skladniki potrzebne do wykonania tej potrawy i sam przepis na nia
 if category == "zupa":
     print("dostepne zupy:\nzupa ogorkowa\nzupa pomidorowa\nrosol\nbarszcz czerwony\nbarszcz bialy\n")
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "zupa ogorkowa":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "zupa pomidorowa":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "rosol":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "barszcz czerwony":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "barszcz bialy":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
 if category == "danie glowne miesne":
     print("dostepne dania glowne miesne:\ngolabki\npulpety\nkotlety mielone\nkotlety schabowe z pieczarkami\npierogi z miesem\n")
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "golabki":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "pulpety":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "kotlety mielone":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "kotlety schabowe z pieczarkami":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "pierogi z miesem":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
 if category == "danie glowne bezmiesne":
     print("dostepne dania glowne bezmiesne:\nnalesniki\npierogi z serem i jagodami\npierogi z kapusta i grzybami\npierogi ruskie\nkotlety jajeczne z kasza\n")
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "nalesniki":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "pierogi z serem i jagodami":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "pierogi z kapusta i grzybami":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "pierogi ruskie":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "kotlety jajeczne z kasza":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
 if category == "deser":
     print("dostepne desery:\nsernik\ntarta ze sliwkami\npiernik czekoladowy\nszarlotka\nbrownie\n")
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "sernik":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "tarta ze sliwkami":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "piernik czekoladowy":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "szarlotka":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     if dish == "brownie":
-        print("{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
