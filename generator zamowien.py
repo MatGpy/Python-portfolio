@@ -1,15 +1,19 @@
+"""
+Generator zamowien na komputery - program ten generuje losowe zamowienie na komputer lub caly zestaw komputerowy z peryferiami, z nowych lub uzywanych czesci, w okreslonym budzecie, do okreslonych zadan, spelniajacy konkretne wymagania, posiadajacy konkretne funkcje. Program ten napisalem w celu sprawdzenia swoich umiejetnosci w ukladaniu komputerow w okreslonym budzecie i do okreslonego przeznaczenia.
+"""
+# program tworzy funkcje wybierajaca, czy zestaw ma skladac sie wyacznie z komputera, czy z komputera wraz z peryferiami
 def nwm(b):
  if b == 1:
     return "PC"
  if b == 2:
     return "all setup"
-
+# program tworzy funkcje wybierajaca, czy zestaw ma sie skladac z nowych, czy z uzywanych czesci
 def nwm2(c):
  if c == 1:
     return "new"
  if c == 2:
     return "used"
-
+# program tworzy funkcje wybierajaca przeznaczenie zestawu
 def destination(d, a):
  if d == 1:
     return "gaming"
@@ -33,7 +37,7 @@ def destination(d, a):
     return "mixed"
  if d == 8:
     return "mixed"
-
+# program tworzy funkcje wybierajaca typ gier, do ktorych ma byc przeznaczony komputer w przypadku, w ktorym zestaw ma byc przeznaczony do grania
 def priority2(e, d):
  if e == 1 and d == 1:
     return "RTS"
@@ -81,7 +85,7 @@ def priority2(e, d):
     return "3D modeling"
  else:
     return "mixed"
-
+# program tworzy funkcje precyzujaca wymagania odnosnie glosnosci pracy zestawu
 def noise(g):
  if g == 1:
      return "it is absolutely neutral for me"
@@ -97,7 +101,7 @@ def noise(g):
      return "it is absolutely neutral for me"
  if g == 7:
      return "it is absolutely neutral for me"
-
+# program tworzy funkcje precyzujaca wymagania odnosnie temperatury pracy zestawu
 def cooling(h):
  if h == 1:
     return "I don't want a PC, I want a fridge with windows 10"
@@ -107,7 +111,7 @@ def cooling(h):
     return "If it won't achieve sun temps, I will be pleased"
  if h == 4:
     return "I don't really care about it"
-    
+# program tworzy funkcje precyzujaca wymagania odnosnie wymiarow komputera    
 def size(l):
  if l == 1:
     return "as small as possible"
@@ -125,7 +129,7 @@ def size(l):
     return "i like normal size PCs"
  if l == 8:
     return "it isnt important for me"
-
+# program tworzy funkcje wybierajaca preferencje odnosnie kolorystyki komputera i jego oswietlenia
 def aesthetics(i):
  if i == 1:
     return "Black theme with lots of RGB"
@@ -143,7 +147,7 @@ def aesthetics(i):
     return "It isn't important for me"
  if i == 8:
     return "White theme with lots of RGB"
-    
+# program tworzy funkcje     
 def priority(m, b):
  if m == 1 and b == 2:
      return "better pc"
@@ -157,7 +161,7 @@ def priority(m, b):
      return "better looks"
  if m == 3 and b == 1:
      return "better silence"
-
+# program tworzy funkcje wybierajaca preferencje odnosnie tego, ktore peryferia maja byc przewodowe, a ktore bezprzewodowe (w przypadku, w ktorym peryferia maja byc dodane do zestawu)
 def peripherals(r, b):
  if r == 1 and b == 2:
      return "all peripherals wired"
@@ -175,7 +179,7 @@ def peripherals(r, b):
      return "it's neutral for me"
  else:
      return "no peripherals"
-     
+# program tworzy funkcje wybierajaca ewentualne zyczenia uzytkownika dotyczace zestawu     
 def special_wishes(j, k, b):
  if j == 1 or k == 1:
      return "none"
@@ -225,7 +229,7 @@ def special_wishes(j, k, b):
      return "monitor with 240 hz refresh rate"
  if j == 24 or k == 24:
      return "none"
-
+# program tworzy funkcje wybierajaca, czy uzytkownik bedzie chcial podkrecac zamowiony komputer
 def overclocking(h):
  if h == 1:
      return "I want to OC"
@@ -235,7 +239,7 @@ def overclocking(h):
      return "it's neutral for me"
  if h == 4:
      return "it's neutral for me"
-
+# program tworzy zbior losowo wygenerowanych liczb, ktore beda potrzebne do wygenerowania zamowienia
 import random
 a = random.randint(1000,18000)
 b = random.randint(1,2)
@@ -250,5 +254,5 @@ k = random.randint(1,23)
 l = random.randint(1,8)
 m = random.randint(1,3)
 r = random.randint(1,7)
-
+# program wstawia losowo wygenerowane liczby do funkcji i wyswietla wykonane w ten sposob zamowienie na zestaw komputerowy
 print("price:\n{}\n\n{}\n{}\n\ndestination:\n{}\n{}\n\npriority:\n{}\n\nnoise:\n{}\n\ncooling:\n{}\n\naesthetics:\n{}\n\nsize:\n{}\n\npriority:\n{}\n\nperipherals:\n{}\n\nOC:\n{}\n\nspecial wishes:\n{}\n".format(a,nwm(b),nwm2(c),destination(d,a),priority2(e,d),priority(m,b),noise(g),cooling(h),aesthetics(i),size(l),priority(m,b),peripherals(r,b),overclocking(h),special_wishes(j,k,b)))

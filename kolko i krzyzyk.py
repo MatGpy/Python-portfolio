@@ -7,6 +7,7 @@ kolko i krzyzyk:
 5. gdy oboje gracze uloza swoje 3 symbole w rownym rzedzie lub na skos w tej samej rondzie, gra konczy sie remisem
 6. gdy wszystkie pola na planszy sie zapelnia przed zwyciestwem ktoregos z graczy, gra konczy sie bez rozstrzygniecia
 '''
+# program pyta urzytkownika o tryb gry i symbol, ktorym chce grac
 import random
 tryb = str(input("wybierz tryb gry: "))
 sa = str(input("wybierz symbol a: "))
@@ -16,6 +17,7 @@ if sa == "o":
     sb = "x"
 if sa != "x" and sa != "o":
     raise TypeError("cos poszlo nie tak")
+# program tworzy tablice, w ktorej przechowywane beda symbole
 t = [
     [' ', ' ', ' '],
     [' ', ' ', ' '],
