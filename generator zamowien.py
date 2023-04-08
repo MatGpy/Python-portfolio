@@ -2,19 +2,19 @@
 Generator zamowien na komputery - program ten generuje losowe zamowienie na komputer lub caly zestaw komputerowy z peryferiami, z nowych lub uzywanych czesci, w okreslonym budzecie, do okreslonych zadan, spelniajacy konkretne wymagania, posiadajacy konkretne funkcje. Program ten napisalem w celu sprawdzenia swoich umiejetnosci w ukladaniu komputerow w okreslonym budzecie i do okreslonego przeznaczenia.
 """
 # program tworzy funkcje wybierajaca, czy zestaw ma skladac sie wyacznie z komputera, czy z komputera wraz z peryferiami
-def nwm(b):
+def func1(b):
  if b == 1:
     return "PC"
  if b == 2:
-    return "all setup"
+    return "PC + peripherals"
 # program tworzy funkcje wybierajaca, czy zestaw ma sie skladac z nowych, czy z uzywanych czesci
-def nwm2(c):
+def func2(c):
  if c == 1:
-    return "new"
+    return "only new parts"
  if c == 2:
-    return "used"
+    return "new parts or used parts"
 # program tworzy funkcje wybierajaca przeznaczenie zestawu
-def destination(d, a):
+def purpose(d, a):
  if d == 1:
     return "gaming"
  if d == 2:
@@ -88,47 +88,47 @@ def priority2(e, d):
 # program tworzy funkcje precyzujaca wymagania odnosnie glosnosci pracy zestawu
 def noise(g):
  if g == 1:
-     return "it is absolutely neutral for me"
+     return "it's neutral for me"
  if g == 2:
-     return "it should be as quiet as it is possible"
+     return "it should be as quiet as possible"
  if g == 3:
-     return "not too loud, but it do not have to be really quiet"
+     return "not too loud, but it doesn't have to be really quiet"
  if g == 4:
      return "I play with headphones"
  if g == 5:
-     return "every db is painfull"
+     return "every additional db is painfull"
  if g == 6:
-     return "it is absolutely neutral for me"
+     return "it's neutral for me"
  if g == 7:
-     return "it is absolutely neutral for me"
+     return "it's neutral for me"
 # program tworzy funkcje precyzujaca wymagania odnosnie temperatury pracy zestawu
 def cooling(h):
  if h == 1:
-    return "I don't want a PC, I want a fridge with windows 10"
+    return "I don't want a PC, I want a fridge"
  if h == 2:
-    return "I don't really care about it"
+    return "it's neutral for me"
  if h == 3:
-    return "If it won't achieve sun temps, I will be pleased"
+    return "If it won't achieve sun temps, I will be satisfied"
  if h == 4:
-    return "I don't really care about it"
+    return "it's neutral for me"
 # program tworzy funkcje precyzujaca wymagania odnosnie wymiarow komputera    
 def size(l):
  if l == 1:
     return "as small as possible"
  if l == 2:
-    return "small PCs are nice, but temps are more important"
+    return "small PCs are nice, but temperatures are more important"
  if l == 3:
     return "small but not too small"
  if l == 4:
-    return "i like normal size PCs"
+    return "i like normal-sized PCs"
  if l == 5:
     return "small PCs are nice, but cost is more important"
  if l == 6:
-    return "it isnt important for me"
+    return "it's neutral for me"
  if l == 7:
-    return "i like normal size PCs"
+    return "i like normal-sized PCs"
  if l == 8:
-    return "it isnt important for me"
+    return "it's neutral for me"
 # program tworzy funkcje wybierajaca preferencje odnosnie kolorystyki komputera i jego oswietlenia
 def aesthetics(i):
  if i == 1:
@@ -147,12 +147,12 @@ def aesthetics(i):
     return "It isn't important for me"
  if i == 8:
     return "White theme with lots of RGB"
-# program tworzy funkcje     
+# program tworzy funkcje wybierajaca, na ktory obszar zestawu nalezy zwrocic najwieksza uwage    
 def priority(m, b):
  if m == 1 and b == 2:
      return "better pc"
  if m == 2 and b == 2:
-     return "better display"
+     return "better monitor"
  if m == 3 and b == 2:
      return "better peripherals"
  if m == 1 and b == 1:
@@ -160,7 +160,7 @@ def priority(m, b):
  if m == 2 and b == 1:
      return "better looks"
  if m == 3 and b == 1:
-     return "better silence"
+     return "silence"
 # program tworzy funkcje wybierajaca preferencje odnosnie tego, ktore peryferia maja byc przewodowe, a ktore bezprzewodowe (w przypadku, w ktorym peryferia maja byc dodane do zestawu)
 def peripherals(r, b):
  if r == 1 and b == 2:
@@ -194,7 +194,7 @@ def special_wishes(j, k, b):
  if j == 6 and b == 2 or k == 6 and b == 2:
      return "ultrawide monitor"
  if j == 7 and b == 2 or k == 7 and b == 2:
-     return "monitor with 144 hz refresh rate"
+     return "monitor with 144 hz of refresh rate"
  if j == 8 or k == 8:
      return "none"
  if j == 9 and b == 2 or k == 9 and b == 2:
@@ -216,7 +216,7 @@ def special_wishes(j, k, b):
  if j == 17 and b == 2 or k == 17 and b == 2:
      return "three monitors"
  if j == 18 or k == 18:
-     return "only SSDs"
+     return "only SSD storage"
  if j == 19 or k == 19:
      return "none"
  if j == 20 or k == 20:
@@ -226,7 +226,7 @@ def special_wishes(j, k, b):
  if j == 22 or k == 22:
      return "none"
  if j == 23 and b == 2 or k == 23 and b == 2:
-     return "monitor with 240 hz refresh rate"
+     return "monitor with 240 hz of refresh rate"
  if j == 24 or k == 24:
      return "none"
 # program tworzy funkcje wybierajaca, czy uzytkownik bedzie chcial podkrecac zamowiony komputer
@@ -255,4 +255,4 @@ l = random.randint(1,8)
 m = random.randint(1,3)
 r = random.randint(1,7)
 # program wstawia losowo wygenerowane liczby do funkcji i wyswietla wykonane w ten sposob zamowienie na zestaw komputerowy
-print("price:\n{}\n\n{}\n{}\n\ndestination:\n{}\n{}\n\npriority:\n{}\n\nnoise:\n{}\n\ncooling:\n{}\n\naesthetics:\n{}\n\nsize:\n{}\n\npriority:\n{}\n\nperipherals:\n{}\n\nOC:\n{}\n\nspecial wishes:\n{}\n".format(a,nwm(b),nwm2(c),destination(d,a),priority2(e,d),priority(m,b),noise(g),cooling(h),aesthetics(i),size(l),priority(m,b),peripherals(r,b),overclocking(h),special_wishes(j,k,b)))
+print("price:\n{}\n\n{}\n{}\n\ndestination:\n{}\n{}\n\npriority:\n{}\n\nnoise:\n{}\n\ncooling:\n{}\n\naesthetics:\n{}\n\nsize:\n{}\n\npriority:\n{}\n\nperipherals:\n{}\n\nOC:\n{}\n\nspecial wishes:\n{}\n".format(a,func1(b),func2(c),purpose(d,a),priority2(e,d),priority(m,b),noise(g),cooling(h),aesthetics(i),size(l),priority(m,b),peripherals(r,b),overclocking(h),special_wishes(j,k,b)))
