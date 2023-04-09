@@ -1,10 +1,9 @@
 #Kalkulator BMI (Body Mass Index)
-w = float(input("type your weight in kilograms: ")) 
-h = float(input("type your height in centimetres: "))
+weight = float(input("type your weight in kilograms: ")) 
+height = float(input("type your height in centimetres: "))
 # program pobiera od uzytkownika mase ciala (w kilogramach) i wzrost (w centymetrach)
-x = h / 100 
-y = x*x
-bmi = w/y
+x = height / 100 
+bmi = round(weight/(x**2), 2)
 # program wylicza BMI na podstawie dostarczonych danych
 print("Your BMI is: {}".format(bmi))
 if bmi <= 18:

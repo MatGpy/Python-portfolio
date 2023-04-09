@@ -1,6 +1,6 @@
 # Program bedacy gra polegajaca na odgadnieciu wygenerowanego losowo numeru z przedzialu od 1 do 10 w okreslonej liczbie prob
 import random
-print("Try to guess a number between 1 and 10")
+print("Try to guess a randomly generated number between 1 and 10")
 # program generuje losowo trzy numery - zgadywany numer i dwa inne numery uzywane do generowania wskazowek dla gracza
 num = random.randint(1,10)
 num2 = random.randint(1,3)
@@ -21,7 +21,7 @@ if level2 == "hard":
 if level2 != "very easy" and level2 != "easy" and level2 != "normal" and level2 != "hard":
     raise TypeError
 # program pyta sie uzytkownika o to, czy chce on dostac wskazowke i daje mu ja, jesli uzytkownik tego chce
-hint = str(input("Do you want a hint? "))
+hint = str(input("Do you want to get a hint?"))
 if hint == "yes":
     if num2 == 1:
         if num % 2 == 0:
@@ -35,9 +35,9 @@ if hint == "yes":
             print("this number is higher or equal to {}".format(num3))
     if num2 == 3:
         if num**2 < 10:
-            print("power of this number is lower than 10")
+            print("this number squared is lower than 10")
         if num**2 >= 10:
-            print("power of this number is higher or equal to 10")
+            print("this number squared is higher or equal to 10")
 if hint != "yes" and hint != "no":
     raise TypeError
 # program tworzy funkcje sprawdzajaca, czy numer podany przez uzytkownika w danej probie jest prawidlowy, za wysoki, lub za niski

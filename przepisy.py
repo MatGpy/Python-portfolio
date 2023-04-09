@@ -1,5 +1,5 @@
 """
-Program ten to zbior przepisow na popularne i lubiane potrawy - slodkie, slone, kwasne.
+Program ten to zbior przepisow na rozmaite potrawy.
 sposob dzialania:
 1 - wybierz kategorie potrawy
 2 - wybierz potrawe z wymienionych
