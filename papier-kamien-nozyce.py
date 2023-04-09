@@ -3,7 +3,7 @@ import random
 # program pobiera od uzytkownika jego ruch i zwraca blad, jesli jego ruch jest niezgodny z zasadami gry
 player1 = str(input("Now it's your turn (you can choose rock, paper, or scissors): "))
 if player1 != "rock" and player1 != "paper" and player1 != "scissors":
-    raise TypeError
+    raise ValueError("player chose incorrect option")
 # program wybiera swoj ruch w oparciu o wartosc losowo wygenerowanej liczby
 player2 = random.randint(1,3)
 def player2_choice(x):

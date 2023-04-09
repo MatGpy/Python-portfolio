@@ -1,8 +1,9 @@
 # Program generujacy N-ty element ciagu Fibonacciego (N wybiera uzytkownik)
-# funkcja okreslajaca wartosc N-tego elementu ciagu Fibonacciego
+# program tworzy funkcje okreslajaca wartosc N-tego elementu ciagu Fibonacciego
 def sequence(x):
+# program zwraca blad jesli uzytkownik podal liczbe ujemna
     if x < 0:
-        raise TypeError
+        raise ValueError("incorrect data")
     if x == 0:
         return 0
     if x == 1 or x == 2:
