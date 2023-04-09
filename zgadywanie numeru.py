@@ -19,9 +19,9 @@ if level2 == "normal":
 if level2 == "hard":
     level = 2
 if level2 != "very easy" and level2 != "easy" and level2 != "normal" and level2 != "hard":
-    raise TypeError
+    raise ValueError("player chose incorrect level of difficulty")
 # program pyta sie uzytkownika o to, czy chce on dostac wskazowke i daje mu ja, jesli uzytkownik tego chce
-hint = str(input("Do you want to get a hint?"))
+hint = str(input("Do you want to get a hint? "))
 if hint == "yes":
     if num2 == 1:
         if num % 2 == 0:
@@ -39,7 +39,7 @@ if hint == "yes":
         if num**2 >= 10:
             print("this number squared is higher or equal to 10")
 if hint != "yes" and hint != "no":
-    raise TypeError
+    raise ValueError("incorrect value")
 # program tworzy funkcje sprawdzajaca, czy numer podany przez uzytkownika w danej probie jest prawidlowy, za wysoki, lub za niski
 def guess(x, y):
     if x == y:
