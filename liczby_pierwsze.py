@@ -1,6 +1,9 @@
 # Program sprawdzajacy, czy wpisana przez uzytkownika liczba jest liczba pierwsza
 # program pobiera badana liczbe od uzytkownika
 number = int(input("insert a number: "))
+# program zwraca blad jesli uzytkownik podal liczbe ujemna
+if number < 0:
+   raise ValueError("incorrect data")
 # program tworzy funkcje sprawdzajaca, czy dana liczba jest liczba jest liczba pierwsza. Jej dzialanie opiera sie na zaleznosci, ktora zauwazylem - otoz kazda liczba zlozona musi dzielic sie bez reszty przez 2, 3 lub 5 - jesli dana liczba nie dzieli sie przez zadna z nich, to jest ona liczba pierwsza
 def check_if_prime(x):
     if x % 2 != 0 and x % 3 != 0 and x % 5 != 0:
