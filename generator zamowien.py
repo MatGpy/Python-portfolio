@@ -37,7 +37,7 @@ def purpose(d, a):
     return "mixed"
  if d == 8:
     return "mixed"
-# program tworzy funkcje wybierajaca typ gier, do ktorych ma byc przeznaczony komputer w przypadku, w ktorym zestaw ma byc przeznaczony do grania
+# program tworzy funkcje wybierajaca typ gier, do ktorych ma byc przeznaczony komputer w przypadku, w ktorym zestaw ma byc przeznaczony do grania, lub wybierajaca konkretne zastosowanie produktywne w przypadku, w ktoeym komp[uter ma sluzyc do zastosowan produktywnych
 def priority2(e, d):
  if e == 1 and d == 1:
     return "RTS"
@@ -96,7 +96,7 @@ def noise(g):
  if g == 4:
      return "I play with headphones"
  if g == 5:
-     return "every additional db is painfull"
+     return "every additional db is painful"
  if g == 6:
      return "it's neutral for me"
  if g == 7:
@@ -104,11 +104,11 @@ def noise(g):
 # program tworzy funkcje precyzujaca wymagania odnosnie temperatury pracy zestawu
 def cooling(h):
  if h == 1:
-    return "I don't want a PC, I want a fridge"
+    return "it must be as cool as possible"
  if h == 2:
     return "it's neutral for me"
  if h == 3:
-    return "If it won't achieve sun temps, I will be satisfied"
+    return "If it won't achieve temperature of sun, I will be satisfied"
  if h == 4:
     return "it's neutral for me"
 # program tworzy funkcje precyzujaca wymagania odnosnie wymiarow komputera    
@@ -118,7 +118,7 @@ def size(l):
  if l == 2:
     return "small PCs are nice, but temperatures are more important"
  if l == 3:
-    return "small but not too small"
+    return "small, but not too small"
  if l == 4:
     return "i like normal-sized PCs"
  if l == 5:
