@@ -255,4 +255,4 @@ l = random.randint(1,8)
 m = random.randint(1,3)
 r = random.randint(1,7)
 # program wstawia losowo wygenerowane liczby do funkcji i wyswietla wykonane w ten sposob zamowienie na zestaw komputerowy
-print("price:\n{}\n\n{}\n{}\n\ndestination:\n{}\n{}\n\npriority:\n{}\n\nnoise:\n{}\n\ncooling:\n{}\n\naesthetics:\n{}\n\nsize:\n{}\n\npriority:\n{}\n\nperipherals:\n{}\n\nOC:\n{}\n\nspecial wishes:\n{}\n".format(a,func1(b),func2(c),purpose(d,a),priority2(e,d),priority(m,b),noise(g),cooling(h),aesthetics(i),size(l),priority(m,b),peripherals(r,b),overclocking(h),special_wishes(j,k,b)))
+print("price:\n{}\n\n{}\n{}\n\npurpose:\n{}\n{}\n\npriority:\n{}\n\nnoise:\n{}\n\ncooling:\n{}\n\naesthetics:\n{}\n\nsize:\n{}\n\npriority:\n{}\n\nperipherals:\n{}\n\nOC:\n{}\n\nspecial wishes:\n{}\n".format(a,func1(b),func2(c),purpose(d,a),priority2(e,d),priority(m,b),noise(g),cooling(h),aesthetics(i),size(l),priority(m,b),peripherals(r,b),overclocking(h),special_wishes(j,k,b)))
