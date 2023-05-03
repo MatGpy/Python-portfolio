@@ -1,5 +1,15 @@
 # Program bedacy gra polegajaca na odgadnieciu wygenerowanego losowo numeru z przedzialu od 1 do 10 w okreslonej liczbie prob
 import random
+# program tworzy funkcje sprawdzajaca, czy numer podany przez uzytkownika w danej probie jest prawidlowy, za wysoki, lub za niski
+def guess(x, y):
+    if x == y:
+        return "Correct answer"
+    else:
+        if x < y:
+            return "Your guess is too low"
+        if x > y:
+            return "Your guess is too high"
+
 print("Try to guess a randomly generated number between 1 and 10")
 # program generuje losowo trzy numery - zgadywany numer i dwa inne numery uzywane do generowania wskazowek dla gracza
 num = random.randint(1,10)
@@ -36,16 +46,7 @@ if hint == "yes":
             print("this number squared is higher or equal to 10")
 if hint != "yes" and hint != "no":
     raise ValueError("incorrect value")
-# program tworzy funkcje sprawdzajaca, czy numer podany przez uzytkownika w danej probie jest prawidlowy, za wysoki, lub za niski
-def guess(x, y):
-    if x == y:
-        return "Correct answer"
-    else:
-        if x < y:
-            return "Your guess is too low"
-        if x > y:
-            return "Your guess is too high"
-#program tworzy funkcje iterujaca przez wszystkie dostepne dla uzytkownika proby, pokazuje poprawnosc wykonanych przez uzytkownika prob i wyswietla prawidlowy numer jesli uzytkownik go nie zgadl
+# program tworzy petle iterujaca przez wszystkie dostepne dla uzytkownika proby, pokazuje poprawnosc wykonanych przez uzytkownika prob i wyswietla prawidlowy numer jesli uzytkownik go nie zgadl
 i = 1
 while i <= level:
     x = int(input("Attempt number {}: ".format(i)))
