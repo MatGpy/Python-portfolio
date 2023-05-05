@@ -4,9 +4,9 @@ def sequence(x):
 # program zwraca blad jesli uzytkownik podal liczbe ujemna
     if x < 0:
         raise ValueError("incorrect data")
-    if x == 0:
+    elif x == 0:
         return 0
-    if x == 1 or x == 2:
+    elif x == 1 or x == 2:
         return 1
     else:
         return sequence(x-2) + sequence(x-1)

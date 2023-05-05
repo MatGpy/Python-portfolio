@@ -9,17 +9,21 @@ player2 = random.randint(1,3)
 def player2_choice(x):
     if x == 1:
         return "rock"
-    if x == 2:
+    elif x == 2:
         return "paper"
-    if x == 3:
+    elif x == 3:
         return "scissors"
+    else:
+        return "something went wrong"
 # program tworzy funkcje do porownywania ruchow gracza i programu
 def comparison(x, y):
     if x == "rock" and y == "scissors" or x == "paper" and y == "rock" or x == "scissors" and y == "paper":
         return "player 2 won"
-    if x == "rock" and y == "paper" or x == "paper" and y == "scissors" or x == "scissors" and y == "rock":
-        return "you won"
-    if x == "rock" and y == "rock" or x == "paper" and y == "paper" or x == "scissors" and y == "scissors":
-        return "draw"
+    elif x == "rock" and y == "paper" or x == "paper" and y == "scissors" or x == "scissors" and y == "rock":
+          return "you won"
+    elif x == "rock" and y == "rock" or x == "paper" and y == "paper" or x == "scissors" and y == "scissors":
+          return "draw"
+    else:
+          return "something went wrong"
 # program porownuje ruch gracza z ruchem programu za pomoca uprzednio utworzonej funkcji i pokazuje wynik starcia wraz z ruchem programu
 print("player 2: {}\n{}".format(player2_choice(player2), comparison(player2_choice(player2), player1)))

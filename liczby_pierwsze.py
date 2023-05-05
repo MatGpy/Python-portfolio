@@ -13,7 +13,7 @@ def check_if_prime(x):
 # program sprawdza, czy liczba podana przez uzytkownika jest rowna 0,1,2,3, albo 5 - w takich przypadkach funkcja zwrocilaby nieprawidlowe wyniki, dlatego dla tych przypadkow trzeba indywidualnie przypisac dzialanie programu. Po analizie tej liczby program odpowiada, czy jest ona pierwsza, czy zlozona 
 if number == 2 or number == 3 or number == 5:
    print("your number is a prime number")
-if number == 1 or number == 0:
+elif number == 1 or number == 0:
    print("your number isn't a prime number")
 else:
    print(check_if_prime(number))

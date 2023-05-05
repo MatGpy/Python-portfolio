@@ -12,11 +12,13 @@ bmi = round(weight/(x**2), 2)
 print("Your BMI is: {}".format(bmi))
 if bmi <= 18:
   print("your weight is too low")
-if bmi > 18 and bmi <= 24:
-  print("your weight is perfect")
-if bmi > 24 and bmi <= 29:
-  print("your weight is a bit too high")
-if bmi > 29 and bmi <= 35:
-  print("your weight is too high")
-if bmi > 35:
-  print("your weight is way too high")
+elif bmi > 18 and bmi <= 24:
+    print("your weight is perfect")
+elif bmi > 24 and bmi <= 29:
+    print("your weight is a bit too high")
+elif bmi > 29 and bmi <= 35:
+    print("your weight is too high")
+elif bmi > 35:
+    print("your weight is way too high")
+else:
+    print("something went wrong")

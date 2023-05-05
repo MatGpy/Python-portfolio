@@ -97,14 +97,14 @@ if category == "zupa":
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "zupa ogorkowa":
         print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "zupa pomidorowa":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "rosol":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "barszcz czerwony":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "barszcz bialy":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "zupa pomidorowa":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "rosol":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "barszcz czerwony":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "barszcz bialy":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     else:
         raise ValueError("przepis na podana potrawe jest niedostepny")
 if category == "danie glowne miesne":
@@ -112,14 +112,14 @@ if category == "danie glowne miesne":
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "golabki":
         print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "pulpety":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "kotlety mielone":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "kotlety schabowe z pieczarkami":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "pierogi z miesem":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "pulpety":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "kotlety mielone":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "kotlety schabowe z pieczarkami":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "pierogi z miesem":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     else:
         raise ValueError("przepis na podana potrawe jest niedostepny")
 if category == "danie glowne bezmiesne":
@@ -127,14 +127,14 @@ if category == "danie glowne bezmiesne":
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "nalesniki":
         print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "pierogi z serem i jagodami":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "pierogi z kapusta i grzybami":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "pierogi ruskie":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "kotlety jajeczne z kasza":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "pierogi z serem i jagodami":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "pierogi z kapusta i grzybami":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "pierogi ruskie":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "kotlety jajeczne z kasza":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     else:
         raise ValueError("przepis na podana potrawe jest niedostepny")
 if category == "deser":
@@ -142,13 +142,13 @@ if category == "deser":
     dish = str(input("wpisz nazwe potrawy: "))
     if dish == "sernik":
         print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "tarta ze sliwkami":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "piernik czekoladowy":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "szarlotka":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
-    if dish == "brownie":
-        print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "tarta ze sliwkami":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "piernik czekoladowy":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "szarlotka":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
+    elif dish == "brownie":
+          print("skladniki:\n{}\n\n{}".format(skladniki[dish], przepisy[dish]))
     else:
         raise ValueError("przepis na podana potrawe jest niedostepny")
